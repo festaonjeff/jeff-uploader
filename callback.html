@@ -1,0 +1,14 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jeff Uploader 연결</title><link rel="stylesheet" href="style.css"></head><body><main>
+<h1>연결 중…</h1><p class="d" id="m">이 컴퓨터의 제프업로더로 넘깁니다.</p>
+<script>
+// 틱톡·Meta 가 돌려준 인증 코드를 이 컴퓨터의 업로더(127.0.0.1:8787)로 그대로 넘긴다.
+//   이 페이지는 아무것도 저장하거나 보내지 않는다.
+var q = location.search + location.hash.replace(/^#/, location.search ? '&' : '?');
+if (q.length > 1) {
+  location.replace('http://127.0.0.1:8787/oauth/callback' + q);
+} else {
+  document.getElementById('m').textContent = '받은 코드가 없습니다. 업로더에서 다시 연결해 주세요.';
+}
+</script>
+</main></body></html>

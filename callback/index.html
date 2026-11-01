@@ -1,0 +1,14 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zohobkmail</title><link rel="stylesheet" href="/style.css"></head><body><main>
+<h1>Connecting…</h1><p class="d" id="m">Returning to the Zohobkmail app on this computer…</p>
+<script>
+// 틱톡·Meta 가 돌려준 인증 코드를 이 컴퓨터의 업로더(127.0.0.1:8787)로 그대로 넘긴다.
+//   이 페이지는 아무것도 저장하거나 보내지 않는다.
+var q = location.search + location.hash.replace(/^#/, location.search ? '&' : '?');
+if (q.length > 1) {
+  location.replace('http://127.0.0.1:8787/oauth/callback' + q);
+} else {
+  document.getElementById('m').textContent = 'No authorization code received. Please connect again from the app.';
+}
+</script>
+</main></body></html>

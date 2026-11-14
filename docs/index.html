@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Documentation — Zohobkmail</title><meta name="description" content="Zohobkmail documentation: connecting TikTok, posting options, scheduling, troubleshooting and data handling.">
+<link rel="canonical" href="https://zohobkmail.com/docs/">
+<link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="/icon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-180.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#7c3aed">
+<meta property="og:site_name" content="Zohobkmail"><meta property="og:title" content="Documentation — Zohobkmail"><meta property="og:description" content="Zohobkmail documentation: connecting TikTok, posting options, scheduling, troubleshooting and data handling."><meta property="og:url" content="https://zohobkmail.com/docs/"><meta property="og:image" content="https://zohobkmail.com/og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/style.css"></head><body>
+<header class="top"><div class="wrap"><a class="brand" href="/"><img src="/icon-192.png" alt="Zohobkmail" width="36" height="36">Zohobkmail</a>
+<nav><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/docs/">Docs</a><a href="/faq/">FAQ</a><a href="/support/">Support</a><a class="btn" href="/app/">Open app</a></nav></div></header>
+<main class="wrap">
+
+<h1>Documentation</h1>
+<h2>Connecting TikTok</h2><p>Zohobkmail uses <b>TikTok Login Kit</b>. Press <i>Connect TikTok account</i>; TikTok opens its authorization page and shows the requested permissions:</p>
+<table><tr><th>Scope</th><th>Why</th></tr><tr><td><code>user.info.basic</code></td><td>Show the connected account's name and avatar in the app.</td></tr><tr><td><code>video.publish</code></td><td>Post the video you chose to your profile (Direct Post).</td></tr></table>
+<p>After approval TikTok redirects to <code>https://zohobkmail.com/callback/</code>, which hands the authorization code back to the app running on your computer. The code is exchanged for a token locally; nothing is stored on this website.</p>
+<h2>Posting options</h2><table>
+<tr><th>Option</th><th>Values</th></tr>
+<tr><td>Caption</td><td>Text, #hashtags, @mentions · TikTok length limit shown live</td></tr>
+<tr><td>Who can view</td><td>Privacy levels allowed for your account (queried from TikTok)</td></tr>
+<tr><td>Comments / Duet / Stitch</td><td>On or off, each</td></tr>
+<tr><td>Content disclosure</td><td>Off · Your brand · Branded content</td></tr>
+<tr><td>Schedule</td><td>Now, or a date and time</td></tr></table>
+<h2>Video requirements</h2><ul><li>MP4 (H.264 video, AAC audio) · vertical 9:16 recommended.</li><li>Length and file size follow the limits TikTok reports for your account (the app checks before posting).</li></ul>
+<h2>Status and errors</h2><p>Posts move through <i>queued → uploading → processing → posted</i>. If TikTok rejects a post, the reason is shown next to it (for example an unsupported privacy level or a video that is too long). Fix the post and retry; nothing is published twice.</p>
+<h2>Disconnecting and data</h2><ul><li>Disconnect in the app deletes the token from your computer.</li><li>Revoke from TikTok: Settings and privacy → Security → Manage app permissions → Zohobkmail.</li><li>What we store and for how long: see the <a href="/privacy-policy/">Privacy Policy</a>.</li></ul>
+
+</main>
+<footer><div class="wrap"><div class="cols">
+<div><a class="brand" href="/"><img src="/icon-192.png" alt="" width="28" height="28">Zohobkmail</a><p class="d">Publish short videos to TikTok and YouTube from one place.</p></div>
+<div><b>Product</b><a href="/features/">Features</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/changelog/">Changelog</a></div>
+<div><b>Resources</b><a href="/docs/">Documentation</a><a href="/faq/">FAQ</a><a href="/support/">Support</a><a href="/about/">About</a></div>
+<div><b>Legal</b><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></div>
+</div><p class="d">© 2026 Zohobkmail · zohobkmail.com · <a href="mailto:contact@zohobkmail.com">contact@zohobkmail.com</a></p></div></footer>
+</body></html>
